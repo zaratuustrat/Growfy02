@@ -1,0 +1,58 @@
+.page__business
+
+.business
+  padding: 140px 0
+.business__container
+
+.business__body
+  display: flex
+  align-items: center
+  background: rgba(129, 129, 139, 0.1)
+  border-radius: 30px
+  gap: 20px
+  padding: 52px 20px
+.business__content,
+.business__buttons
+  flex: 0 1 50%
+  display: flex
+  text-align: center
+  justify-content: center
+
+.business__buttons
+  display: flex
+  gap: 6.2%
+
+.business__block
+  max-width: 355px
+  text-align: center
+
+.block-header
+
+.business__title
+  font-weight: 400
+  font-size: 32px
+  line-height: 140%
+  color: #FFFFFF
+.business__title:not(:last-child)
+  margin-bottom: 16px
+
+@media ( max-width: 1087px)
+
+/*tablet*/ 
+@media ( max-width: 991.98px)
+  .business
+    padding: 70px 0
+  .business__body
+    flex-direction: column
+    align-items: inherit
+
+/*mobile*/
+@media ( max-width: 767.98px)
+  .business
+    padding: 40px 0
+@media ( max-width: 479.98px )
+  .business
+    padding: 20px 0
+  .business__buttons
+    flex-direction: column
+    gap: 20px

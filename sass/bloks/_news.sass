@@ -1,0 +1,138 @@
+.page__news
+
+.news
+  padding: 100px 0
+
+.news__container
+
+.news__content
+
+.news__label:not(:last-child)
+  margin-bottom: 25px
+
+.news__content-body
+  display: flex
+  justify-content: space-between
+  align-items: end
+  gap: 30px
+.news__content-body:not(last-child)
+  margin-bottom: 64px
+.header__block
+
+.block-header
+
+.news__title
+  max-width: 395px
+.news__title:not(:last-child)
+  margin-bottom: 12px
+
+.news__text
+  max-width: 768px
+
+.text
+
+.news__button
+
+.button
+
+.news__items
+  display: grid
+  grid-template-columns: repeat(auto-fit,minmax(290px,1fr))
+  column-gap: 3.8%
+  row-gap: 25px
+  // grid-template-columns: repeat(3,1fr)
+  // gap: 48px
+
+.news__item
+.item-news
+  display: flex
+  flex-direction: column
+  background: #19191D
+  border-radius: 20px
+  overflow: hidden
+
+.item-news__image-link
+  position: relative
+.item-news__image
+  position: relative
+  display: block
+  padding-bottom: 49%
+  img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+.item-news__catigory
+  position: absolute
+  left: 0
+  bottom: 0
+  width: auto
+  height: 38px
+  font-weight: 300
+  font-size: 14px
+  line-height: 160%
+  display: inline-flex
+  align-items: center
+  color: #FFFFFF
+  padding: 9px 10px
+  background: rgba(129, 129, 139, 0.5)
+  border-radius: 0px 10px 0px 0px
+
+.item-news__content
+  display: flex
+  flex-direction: column
+  padding: 36px 26px 40px
+  flex: 1 1 auto
+
+.item-news__date
+  line-height: 150%
+  color: rgba(129, 129, 139, 0.9)
+.item-news__date:not(:last-child)
+  margin-bottom: 20px
+
+.item-news__title
+  font-weight: 400
+  font-size: 19.2px
+  line-height: 140%
+  color: #FFFFFF
+
+.item-news__title:not(:last-child)
+  margin-bottom: 30px
+
+.item-news__text
+  line-height: 150%
+  color: #9C9C9C
+  height: 100%
+.item-news__text:not(:last-child)
+  margin-bottom: 21px
+
+.item-blog__link
+  display: inline
+  font-size: 14px
+  line-height: 160%
+  color: #3D96F4
+  &:hover
+    text-decoration: underline
+/*pc*/ 
+@media ( max-width: 1087px)
+
+/*tablet*/ 
+@media ( max-width: 991.98px)
+  .news__content-body
+    flex-direction: column
+  .news__title,
+  .news__text
+    max-width: 100%
+  .news__content-body
+    align-items: center
+
+/*mobile*/
+@media ( max-width: 767.98px)
+  .news
+    padding: 50px 0
+
+@media ( max-width: 479.98px )
+  .news
+    padding: 20px 0

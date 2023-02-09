@@ -1,0 +1,95 @@
+.page__why
+
+.why
+  padding: 110px 0 100px
+.why__container
+  display: flex
+  align-items: center
+  gap: 64px
+.why__images,
+.why__content
+  flex: 0 1 50%
+
+.images-why
+  display: flex
+  align-items: flex-end
+  position: relative
+.images-why:before
+  content: ''
+  position: absolute
+  left: -8px
+  bottom: -5px
+  height: 122px
+  width: 122px
+  background: url('../img/decor.svg') 0 0 no-repeat
+  z-index: -1
+
+.images-why__item img
+  max-width: 100%
+
+.images-why__item
+  overflow: hidden
+.why-item-1
+  border-radius: 677px 0px 313px 378px
+
+.why-item-2
+  border-radius: 181.438px 181.438px 181.438px 0px
+
+.content-why
+
+.content-why__label
+  margin-bottom: 43px
+.label
+
+.header__block
+
+.block-header
+
+.why__title:not(:last-child)
+  margin-bottom: 40px
+
+.title
+  font-size: 51.2px
+.why__text
+  margin-bottom: 35px
+
+.whi__list
+  display: flex
+  flex-direction: column
+  gap: 20px
+
+.whi__item
+  display: flex
+  align-items: center
+  padding-left: 42px
+  position: relative
+  min-height: 32px
+  &:hover
+    color: #fff
+
+.whi__item:before
+  content: ''
+  position: absolute
+  left: 0
+  top: 0
+  width: 32px
+  height: 32px
+  border-radius: 50%
+  background: rgba(129, 129, 139, 0.1) url('../img/why/check.svg') center 50% no-repeat
+
+/*pc*/ 
+@media ( max-width: 1087px)
+  .why__container
+    gap: 30px
+/*tablet*/ 
+@media ( max-width: 991.98px)
+
+/*mobile*/
+@media ( max-width: 767.98px)
+  .why
+    padding: 50px 0
+  .why__container
+    flex-direction: column-reverse
+@media ( max-width: 479.98px )
+  .why
+    padding: 20px 0

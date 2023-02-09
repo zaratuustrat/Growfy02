@@ -1,0 +1,47 @@
+.page__clients
+
+.clients
+  padding: 100px 0
+
+.clients__container
+
+  .clients__title
+    font-weight: 300
+    font-size: 14px
+    line-height: 160%
+    letter-spacing: 1px
+    text-transform: uppercase
+    color: #FFFFFF
+    text-align: center
+  .clients__title:not(:last-child)
+    margin-bottom: 45px
+
+.title
+
+.clients__items
+  max-width: 1152px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 20px
+  flex-wrap: wrap
+
+.clients__item:hover img
+  max-width: 100%
+  transform: scale(1.1)
+  transition: all 0.3s ease 0s
+/*pc*/ 
+@media ( max-width: 1087px)
+
+/*tablet*/ 
+@media ( max-width: 991.98px)
+  .clients__items
+    justify-content: center
+/*mobile*/
+@media ( max-width: 767.98px)
+  .clients
+    padding: 50px 0
+@media ( max-width: 479.98px )
+  .clients
+    padding: 20px 0

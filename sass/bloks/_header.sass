@@ -1,0 +1,168 @@
+.header
+  position: fixed
+  width: 100%
+  left: 0
+  top: 0
+  background: #0d0d11d0
+  z-index: 100
+.header__container
+
+.header__body
+  display: flex
+  align-items: center
+  min-height: 116px
+  column-gap: 35px
+
+.header__logo:hover img
+  max-width: 100%
+  transform: scale(1.1)
+  transition: all 0.3s ease 0s
+
+.header__menu
+  flex: 1 1 auto
+
+.menu
+
+.menu__body
+
+.menu__list
+  display: flex
+  justify-content: end
+  column-gap: 35px
+.menu__item
+
+.menu__link,
+.cart-header__text
+  line-height: 160%
+  color: #FFFFFF
+  &:hover
+    text-decoration: underline
+.cart-header__text
+  font-size: 18px
+  letter-spacing: 0.96px
+
+.cart-header
+  display: flex
+  align-items: center
+  gap: 5px
+
+.cart-header__quantity
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 30px
+  height: 30px
+  font-weight: 500
+  font-size: 14px
+  background: rgba(129, 129, 139, 0.3)
+  border-radius: 30px
+  color: #FFFFFF
+.header__button
+  flex: 0 0 auto
+.button
+
+.icon-menu
+  display: none
+
+.header__logo,
+.cart-header__quantity,
+.button
+  position: relative
+  z-index: 5
+
+/*tablet*/ 
+@media ( max-width: 991.98px)
+  .header__body,
+  .menu__list
+    column-gap: 23px
+  .header__button.button
+    padding: 10px 20px
+  .header__body
+    min-height: 90px
+/*mobile*/
+@media ( max-width: 767.98px)
+  .menu__body
+    position: fixed
+    width: 100%
+    height: 100%
+    left: -100%
+    top: 0
+    background: #0D0D11
+    padding: 100px 15px 30px
+    overflow: auto
+    transition: left 0.3s ease 0s
+  .menu__body:before
+    content: ''
+    position: fixed
+    width: 100%
+    height: 70px
+    left: 0
+    top: 0
+    background: #0D0D11
+  .menu__list
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 100px 15px 30px
+  .menu__link
+    font-size: 32px
+  .cart-header__text
+    display: none
+  .cart-header__quantity
+    width: 32px
+    height: 40px
+    padding-top: 15px
+    border-radius: 0
+    background: url('../img/header/basket.svg') center / auto 100% no-repeat
+  .header__body
+    gap: 10px
+  //----burger-----------
+  .icon-menu
+    display: block
+    flex: 0 0 30px
+    height: 18px
+    position: relative
+    z-index: 5
+  .icon-menu span,
+  .icon-menu:before,
+  .icon-menu:after
+    content: ''
+    position: absolute
+    right: 5px
+    width: 100%
+    height: 2px
+    background: #FF6D35
+    transition: left 0.3s ease 0s
+  .icon-menu span
+    top: calc(50% - 1px)
+    background: #3D96F4
+  .icon-menu:before
+    top: 0
+  .icon-menu:after
+    background: #5CC97B
+    bottom: 0
+  //----/burger-----------  
+  //----menu-open----------- 
+  .menu-open .icon-menu span
+    width: 0
+
+  .menu-open .icon-menu:before
+    top: calc(50% - 1px)
+    transform: rotate(-45deg)
+
+  .menu-open .icon-menu:after
+    bottom: calc(50% - 1px)
+    transform: rotate(45deg)
+  //----/menu-open-----------   
+  //---------js-----------
+  .menu-open .menu__body,
+  .menu-open .menu__body:before
+    left: 0
+  //---------js-----------
+@media ( max-width: 479.98px )
+  .header__logo
+    width: 40px
+    flex: 0 0 40px
+    overflow: hidden
+  .menu__list
+    padding: 0

@@ -1,0 +1,136 @@
+.page__services
+
+.services
+  padding: 100px 0
+
+.services__container
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 30px
+
+.services__content
+
+.services__label
+
+.services__label:not(:last-child)
+  margin-bottom: 30px
+
+.header__block
+
+.block-header
+
+.services__title:not(:last-child)
+  margin-bottom: 15px
+
+.title
+
+.services__text
+  max-width: 520px
+  margin-bottom: 33px
+.text
+
+.main__button
+
+.button
+
+.services__items
+
+.items-services
+  display: flex
+  gap: 32px
+.colum-bottom
+  padding-top: 48px
+.items-services__column
+  display: flex
+  flex-direction: column
+  gap: 32px
+
+.services__item
+  max-width: 320px
+  background: rgba(129, 129, 139, 0.1)
+  border-radius: 30px
+  &:hover
+    background: rgba(129, 129, 139, 0.07)
+.item-services
+  display: block
+  padding: 55px 25px 60px
+  background: rgba(129, 129, 139, 0.1)
+  border-radius: 30px
+  transition: all 0.3s ease 0s
+
+.item-services__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 20px
+  width: 75.59px
+  height: 75.59px
+.item-services__icon:not(:last-child)
+  margin-bottom: 16px
+
+.item-services-1:hover
+  .icon-1
+    background: #18202b8e
+    border: 2px solid #18202B
+.item-services-2:hover
+  .icon-2
+    background: #2624208e
+    border: 2px solid #262420
+.item-services-3:hover
+  .icon-3
+    background: #271E1E8e
+    border: 2px solid #271E1E
+.item-services-4:hover
+  .icon-4
+    background: #1D24238e
+    border: 2px solid #1D2423
+
+.icon-1
+  background: #18202B
+.icon-2
+  background: #262420
+.icon-3
+  background: #271E1E
+.icon-4
+  background: #1D2423
+
+.item-services__title
+  font-weight: 400
+  font-size: 19.2px
+  line-height: 140%
+  color: #FFFFFF
+.item-services__title:not(:last-child)
+  margin-bottom: 10px
+
+.item-services__text
+  font-weight: 300
+  font-size: 16px
+  line-height: 150%
+  color: #81818B
+
+/*pc*/ 
+@media ( max-width: 1087px)
+  .services__container
+    flex-direction: column
+  .services__content
+    width: 100%
+  .services__text
+    max-width: 100%
+/*tablet*/ 
+@media ( max-width: 991.98px)
+  .services
+    padding: 70px 0
+/*mobile*/
+@media ( max-width: 767.98px)
+  .services
+    padding: 50px 0
+@media ( max-width: 479.98px )
+  .items-services
+    flex-direction: column
+  .item-services
+    padding: 40px 25px
+  .colum-bottom
+    padding-top: 10px
+  .services
+    padding: 20px 0
